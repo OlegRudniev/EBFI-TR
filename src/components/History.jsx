@@ -6,7 +6,7 @@ const History = function (){
     const { t } = useTranslation();
 
     return (
-    <h1>{t("p1")}</h1>
+    <h1>{t("p2")}</h1>
     )
 }
 
