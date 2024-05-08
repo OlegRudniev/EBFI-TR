@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import {Link} from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -16,9 +17,11 @@ const MainCarousel = ({ images }) => {
 
     return (
         <Slider {...settings}>
-            {images.map((image, index) => (
+            {images.map((item, index) => (
+
                 <div key={index}>
-                    <img src={image} alt={`Slide ${index}`} />
+                    <img src={item.src} alt={`Slide ${index}`} />
+                    <Link to={item.route}>{item.name}</Link>
                 </div>
             ))}
         </Slider>

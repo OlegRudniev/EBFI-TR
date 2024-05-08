@@ -26,7 +26,7 @@ const Menu = () => {
                     <div className="menu">
                         <ul>
                             <li>
-                                <Link to="/main" onClick={toggleMenu}> Main
+                                <Link to="/main" onClick={toggleMenu}> {t("p")}
                                 </Link>
                             </li>
 

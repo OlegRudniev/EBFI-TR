@@ -2,6 +2,7 @@
 import DateTime from "./DateTime";
 import Menu from "./Menu";
 import LanguageSelector from "./LanguageSelector";
+import EBFILogo from    "./Pictures/logoEBFnew.svg";
 const Header    = function (){
     return(
         <div>
@@ -10,6 +11,7 @@ const Header    = function (){
                 <DateTime></DateTime>
             </div>
             <div>
+                <img src={EBFILogo} alt="EBFILogo"/>
                 <LanguageSelector></LanguageSelector>
                 <Menu></Menu>
 
